@@ -370,10 +370,17 @@
             const result = document.getElementById('result');
             const error = document.getElementById('error');
             
-            // Hide previous results
+            // Hide previous results and clear content
             result.style.display = 'none';
             error.style.display = 'none';
             loading.style.display = 'block';
+            
+            // Clear previous result content
+            document.getElementById('complaintText').textContent = '';
+            document.getElementById('officer').innerHTML = '';
+            document.getElementById('priority').innerHTML = '';
+            document.getElementById('eta').innerHTML = '';
+            document.getElementById('similarComplaints').innerHTML = '';
             
             try {
                 const response = await fetch('/api/process', {
@@ -399,8 +406,15 @@
         });
         
         function displayResults(data) {
-            // Complaint text
-            document.getElementById('complaintText').textContent = data.complaint_text;
+            // Complaint text with input type badge
+            const inputTypeBadge = data.input_type === 'audio' ? '🎤 AUDIO' : 
+                                   data.input_type === 'video' ? '🎥 VIDEO' : '📝 TEXT';
+            document.getElementById('complaintText').innerHTML = `
+                <span style="display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+                      color: white; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; 
+                      margin-bottom: 8px;">${inputTypeBadge}</span><br>
+                ${data.complaint_text}
+            `;
             
             // Officer
             document.getElementById('officer').innerHTML = `
