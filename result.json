@@ -1,0 +1,69 @@
+{
+  "input_type": "text",
+  "complaint_text": "Road has potholes",
+  "officer": {
+    "id": 2,
+    "name": "Road Maintenance Officer",
+    "confidence": 0.9307383186842245
+  },
+  "priority": {
+    "level": "Low",
+    "confidence": 0.4600412463861227
+  },
+  "eta": {
+    "days": 8.6,
+    "description": "1-2 weeks"
+  },
+  "similar_complaints": [
+    {
+      "complaint_id": 646,
+      "text": "Large pothole on Gandhi Road causing accidents",
+      "officer_id": 2,
+      "priority": 2,
+      "eta_days": 2.2,
+      "status": "resolved",
+      "similarity_score": 0.8385471701622009,
+      "rank": 1
+    },
+    {
+      "complaint_id": 774,
+      "text": "Large pothole on Main Street causing accidents",
+      "officer_id": 2,
+      "priority": 2,
+      "eta_days": 2.6,
+      "status": "resolved",
+      "similarity_score": 0.8340980410575867,
+      "rank": 2
+    },
+    {
+      "complaint_id": 851,
+      "text": "Large pothole on Station Road causing accidents",
+      "officer_id": 2,
+      "priority": 2,
+      "eta_days": 2.9,
+      "status": "resolved",
+      "similarity_score": 0.8323280811309814,
+      "rank": 3
+    },
+    {
+      "complaint_id": 455,
+      "text": "Large pothole on Old Town causing accidents",
+      "officer_id": 2,
+      "priority": 2,
+      "eta_days": 2.6,
+      "status": "resolved",
+      "similarity_score": 0.8100625276565552,
+      "rank": 4
+    },
+    {
+      "complaint_id": 730,
+      "text": "Large pothole on Block A causing accidents",
+      "officer_id": 2,
+      "priority": 2,
+      "eta_days": 2.1,
+      "status": "resolved",
+      "similarity_score": 0.8005017638206482,
+      "rank": 5
+    }
+  ]
+}
