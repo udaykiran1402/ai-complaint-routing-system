@@ -46,6 +46,21 @@ Input (Text/Audio/Video)
 - ✅ ML-driven (no rule-based logic)
 - ✅ Vector-based semantic similarity search
 
+  ## Pretrained Model
+
+The model file is not included in this repository because it exceeds GitHub's file size limits.
+
+Download the pretrained model from the link below and place it in:
+
+models/saved/embedder/
+
+Download Link:
+[Google Drive Link](https://drive.google.com/file/d/1NF-XJzIlY95hu7fnY73yRCsCkqTbsyJk/view?usp=sharing)
+
+Expected file:
+
+models/saved/embedder/model.safetensors
+
 ## Installation
 
 ```bash
